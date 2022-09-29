@@ -1,14 +1,23 @@
 #cs1300-gallery {
   background-color: lightblue;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 /* Uncomment below if images are way too big.
 Selects all image tags and makes them 500px;
  */
-/*img {*/
-/*  width: 500px;*/
-/*}*/
+img {
+  width: 500px;
+}
 
 .gallery-container {
   /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+  display: flex;
+
+  -ms-flex-align: center;
+  flex-wrap: wrap;
+  margin: 10px;
+  object-fit: cover;
+  justify-content: space-around;
 }
